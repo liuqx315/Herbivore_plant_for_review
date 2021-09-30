@@ -7,7 +7,7 @@ Use "Grazing_GPU.m" to generate the data from the simulation in MATLAB.
 
 Use "Herbivore_Plant_cupy.ipynb" to generate the data from the simulation in Jupyter lab (or Jupyter notebook) with python. 
 
-Use "Herbivore_Plant_pyopencl.ipynb" to produce Figure 4B of the paper in Jupyter lab (or Jupyter notebook) with python.
+Use "Herbivore_Plant_pyopencl.ipynb" to produce Figure 5b of the paper in Jupyter lab (or Jupyter notebook) with python.
 
 Use "Circularly_averaged_structure_factor_raster.m" calculate structure factors of spatial pattern.
 
