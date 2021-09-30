@@ -13,4 +13,4 @@ Use "Circularly_averaged_structure_factor_raster.m" calculate structure factors 
 
 Use "Raster_TL_DF_Convolution.m" calculate density flucutation of spatial pattern.
 
-"Spatial_wavelength.zip" gives an example to compute spatial wavelengths of spatial patterns, please follow the procedures in the document.
+"Spatial_wavelength.zip" gives an example to compute spatial wavelengths (patch size) of spatial patterns, please follow the procedures in the document.
