@@ -7,29 +7,29 @@
 %%%
 
 % Spatial setting
-N = 128 ;
+N = 256 ;
 dx = 1 ;
 dy = 1 ;
 Lengthx = N*dx ;
 Lengthy = N*dy ;
 
 % Time setting
-T = 3e4 ;
+T = 1e6 ;
 dt = 0.02 ;
 
 % Operator
 kernel = [0,1/(dx*dx),0;1/(dy*dy),-2/(dx*dx)-2/(dy*dy),1/(dy*dy);0,1/(dx*dx),0] ;
-kernelx = [-1/(2*dx),0,1/(2*dx)] ;
-kernely = [-1/(2*dy);0;1/(2*dy)] ;
+kernelx = [-1/(2*dx);0;1/(2*dx)] ;
+kernely = [-1/(2*dy),0,1/(2*dy)] ;
 
 % Parameter setting
 kappa = 0.05 ;
 D0 = 1 ; 
 DP = 1 ; 
-alpha = 4 ; 
-beta = 0.1 ; 
+alpha = 6 ; 
+beta = -3 ; 
 lambda = 1 ; 
-Hmass = 0.65 ;
+Hmass = 0.5 ;
 
 % Initial condition
 P = 1 - Hmass/lambda + 0.1*(rand(N)*2 - 1) ;
@@ -50,7 +50,7 @@ for i = 1:T
         xlim([0 N]) ;
         ylim([0 N]) ;
         colorbar ; 
-        caxis([0,1]) ;
+%         caxis([0,1]) ;
         title('Plant') ;
         subplot(1,2,2) ;
         imagesc(H) ;
@@ -58,7 +58,7 @@ for i = 1:T
         xlim([0 N]) ;
         ylim([0 N]) ;
         colorbar ; 
-        caxis([0,1]) ;
+%         caxis([0,1]) ;
         title('Herbivore') ;
         Frame = getframe(gcf) ;
         writeVideo(V1,Frame) ;

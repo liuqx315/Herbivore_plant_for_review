@@ -29,8 +29,8 @@ dt = 0.02 ;
 
 % Operator
 kernel = gpuArray([0,1/(dx*dx),0;1/(dy*dy),-2/(dx*dx)-2/(dy*dy),1/(dy*dy);0,1/(dx*dx),0]) ;
-kernelx = gpuArray([-1/(2*dx),0,1/(2*dx)]) ;
-kernely = gpuArray([-1/(2*dy);0;1/(2*dy)]) ;
+kernelx = gpuArray([-1/(2*dx);0;1/(2*dx)]) ;
+kernely = gpuArray([-1/(2*dy),0,1/(2*dy)]) ;
 
 % Parameter setting
 kappa = 0.05 ;
