@@ -1,3 +1,5 @@
+## the code are for published paper by Zhenpeng Ge and Quan-Xing Liu, Foraging behaviors lead to spatiotemporal self-similar dynamics in grazing ecosystems,  Ecology Letters, 2022, 25(2):378-390. DOI: 10.1111/ele.13928
+
 # Herbivore_plant
 The numerical models are peroformed in three different computing environment, i.e., MATLAB2019b, cupy, and pyopencl, respectively. 
 
